@@ -1,9 +1,10 @@
 function snew_fft = filters(s,pitch1)
-%% in this function, we design filters to get the signal contains only one instrument
+%______________________________________________________________________________________________________
+% in this function, we design filters to get the signal contains only one instrument
 % INPUT: s, pitch1 (pitch of the music)
 % OUTPUT: snew_fft
 % snew_fft (design 'filternum' filters to get the frequence in pitch,2*pitch,...filternum*pitch points)
-%——————————————————————————————————————————————————————————————————————————————————————————————————————
+%______________________________________________________________________________________________________
 [fscop,tscop] = size(s);
 snew = zeros(fscop,tscop);
 filternum = 50;     winwid = 5;
